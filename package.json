@@ -1,0 +1,32 @@
+{
+  "name": "npm-root",
+  "version": "1.0.0",
+  "description": "Get the node modules directory, a.k.a. npm root. Global or local.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joakimbeng/npm-root.git"
+  },
+  "keywords": [
+    "npm",
+    "root",
+    "npm",
+    "dir",
+    "node",
+    "modules",
+    "modules",
+    "location"
+  ],
+  "author": "Joakim Carlstein <joakim@klei.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joakimbeng/npm-root/issues"
+  },
+  "homepage": "https://github.com/joakimbeng/npm-root#readme",
+  "devDependencies": {
+    "tape": "^4.0.1"
+  }
+}
