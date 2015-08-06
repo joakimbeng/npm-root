@@ -13,6 +13,14 @@ test('local npm root', function (assert) {
   });
 });
 
+test('local npm root other cwd', function (assert) {
+  npmRoot({cwd: path.join(__dirname, 'node_modules', 'tape')}, function (err, root) {
+    assert.error(err, 'It should not fail');
+    assert.equal(root, path.join(__dirname, 'node_modules', 'tape', 'node_modules'), 'tape\'s local node_modules directory should be returned');
+    assert.end();
+  });
+});
+
 test('global npm root', function (assert) {
   npmRoot({global: true}, function (err, root) {
     assert.error(err, 'It should not fail');

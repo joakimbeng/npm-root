@@ -13,7 +13,7 @@ module.exports = exports = function npmRoot(opts, cb) {
     cmd += ' -g';
   }
 
-  exec(cmd, function (err, stdout) {
+  exec(cmd, {cwd: opts.cwd || process.cwd()}, function (err, stdout) {
     if (err) {
       return cb(err);
     }
